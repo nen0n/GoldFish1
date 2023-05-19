@@ -1,0 +1,192 @@
+#main-content-container
+{
+    background-color: #FFFBF8;
+    color: #363636;
+}
+
+
+
+#banner
+{
+    position: relative;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+#banner img
+{
+    width: 100%;
+}
+
+#banner-text
+{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+
+
+#catalog-content
+{
+    display: flex;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.catalog-item
+{
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    border-radius: 20px;
+
+}
+
+#big-item
+{
+    width: 60%;
+}
+
+.catalog-item img
+{
+    border-radius: inherit;
+    width: 100%;
+    
+}
+
+.catalog-item-title
+{
+    font-size: 1.2rem;
+    margin: 10px 10%;
+}
+
+#small-items
+{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 40%;
+    gap: 10px;
+}
+
+.small-item
+{
+    width: calc(50% - 10px);
+}
+
+#event-list
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.event
+{
+    position: relative;
+    width: calc(50% - 15px);
+}
+
+.event img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.event-text
+{
+    position: absolute;
+    padding: 20px 30px;
+    bottom: 0;
+    left: 0;
+    color: #FFFFFF;
+    background: #2A2A2A;
+    opacity: 0.79;
+}
+
+
+.event-text-title
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+#news-list
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.new
+{
+    position: relative;
+    width: calc(33% - 10px);
+}
+
+.new img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.news-text
+{
+    position: absolute;
+    padding: 20px 30px;
+    bottom: 0;
+    left: 0;
+    color: #FFFFFF;
+    background: #2A2A2A;
+    opacity: 0.79;
+}
+
+
+.news-text-title
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#page-about-content
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#page-about-content > div
+{
+    width: calc(50% - 10px);
+}
+
+#about-img > img
+{
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+#catalog-content
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #big-item
+    {
+        width: 100%;
+    }
+
+#small-items
+    {
+        width: 100%;
+        gap: 10px;
+    }
+}
